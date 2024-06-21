@@ -75,7 +75,6 @@ header {
     z-index: 4; /* Ensure the toggle button is above everything */
 }
 
-
 .content {
     margin-left: 0;
     padding: 20px;
@@ -112,9 +111,6 @@ header {
     position: relative;
     z-index: 1;
 }
-
-
-
 
 .scroll-arrow {
     position: absolute;
@@ -214,8 +210,6 @@ main {
     transform: translateY(-10px);
 }
 
-
-
 footer {
     text-align: center;
     padding: 20px 0;
@@ -291,19 +285,22 @@ footer {
 
 .contact-form {
     background-color: #1e1e1e;
-    padding: 20px;
+    padding: 40px 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    max-height: 90vh;
-    overflow-y: auto;
-    width: 90%; /* Set a maximum width for the form */
-    max-width: 500px;
-    margin: 20px auto; /* Center the form horizontally */
+    animation: fadeIn 1s ease-in-out;
+    width: 100%; /* Ensure the form takes full width of the container */
+    margin: auto; /* Center the form horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .contact-form h2 {
     text-align: center;
     margin-bottom: 20px;
+    padding-top: 0;
 }
 
 .contact-form label {
@@ -315,13 +312,14 @@ footer {
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-    width: 100%;
+    width: calc(100% - 16px); /* Adjust width to fit within the padding */
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #444;
     border-radius: 4px;
     background-color: #2e2e2e;
     color: white;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .contact-form input:focus,
@@ -333,7 +331,7 @@ footer {
 }
 
 .contact-form button {
-    width: 100%;
+    width: calc(100% - 16px); /* Adjust width to fit within the padding */
     padding: 10px;
     background-color: #25d366;
     border: none;
@@ -342,11 +340,38 @@ footer {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .contact-form button:hover {
     background-color: #1da851;
     transform: scale(1.05);
+}
+
+/* Add media query for mobile screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .contact-form {
+        padding: 20px 10px; /* Adjust padding for the form */
+        width: 90%; /* Adjust width for better alignment on smaller screens */
+        margin-top: 10px; /* Adjust top margin */
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        padding: 6px; /* Reduce padding for input fields */
+        width: calc(100% - 12px); /* Adjust width to fit within the padding */
+    }
+
+    .contact-form button {
+        padding: 8px; /* Adjust button padding */
+        font-size: 14px; /* Reduce font size for the button */
+        width: calc(100% - 12px); /* Adjust width to fit within the padding */
+    }
 }
 .contact-buttons {
     margin-top: 10px;
@@ -497,6 +522,3 @@ footer {
         transform: translateY(-120px);
     }
 }
-
-
-
