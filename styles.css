@@ -291,14 +291,14 @@ footer {
 
 .contact-form {
     background-color: #1e1e1e;
-    padding: 40px 20px 20px;
+    padding: 40px 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    animation: fadeIn 1s ease-in-out;
     max-height: 90vh; /* Adjust the height to make the form scrollable */
     overflow-y: auto; /* Add vertical scroll within the form if needed */
     width: 100%; /* Ensure the form takes full width of the container */
-    margin-top: 20px; /* Add some spacing at the top */
+    max-width: 500px; /* Set a maximum width for the form */
+    margin: 20px auto; /* Center the form horizontally */
 }
 
 .contact-form h2 {
