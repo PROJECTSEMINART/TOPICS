@@ -291,20 +291,19 @@ footer {
 
 .contact-form {
     background-color: #1e1e1e;
-    padding: 40px 20px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    max-height: 90vh; /* Adjust the height to make the form scrollable */
-    overflow-y: auto; /* Add vertical scroll within the form if needed */
-    width: 100%; /* Ensure the form takes full width of the container */
-    max-width: 500px; /* Set a maximum width for the form */
+    max-height: 90vh;
+    overflow-y: auto;
+    width: 90%; /* Set a maximum width for the form */
+    max-width: 500px;
     margin: 20px auto; /* Center the form horizontally */
 }
 
 .contact-form h2 {
     text-align: center;
     margin-bottom: 20px;
-    padding-top: 0;
 }
 
 .contact-form label {
@@ -349,7 +348,6 @@ footer {
     background-color: #1da851;
     transform: scale(1.05);
 }
-
 .contact-buttons {
     margin-top: 10px;
 }
