@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanical Engineering Seminar Topics</title>
+    <style>
+     body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.watermark-small {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><text x="50%" y="50%" fill="rgba(255, 255, 255, 0.1)" font-size="10" font-family="Arial" dy=".3em" text-anchor="middle" transform="rotate(-45)">9745745513</text></svg>') repeat;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.watermark-large {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.274);
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.content {
+    position: relative;
+    z-index: 3;
+    padding: 50px 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+li {
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.whatsapp-logo {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    animation: bounce 2s infinite;
+}
+
+.whatsapp-logo img {
+    width: 35px;
+    height: 35px;
+}
+
+.contact-caption {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    z-index: 4;
+}
+
+.robot-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 4;
+}
+
+.robot {
+    width: 100px;
+    height: auto;
+}
+
+.robot-messages {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    position: relative;
+    width: 300px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.message-wrapper {
+    display: flex;
+    flex-direction: column;
+    animation: scrollMessages 30s linear infinite;
+}
+
+.message {
+    margin: 0;
+    white-space: nowrap;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes scrollMessages {
+    0% { transform: translateY(0); }
+    20% { transform: translateY(-30px); }
+    40% { transform: translateY(-60px); }
+    60% { transform: translateY(-90px); }
+    80% { transform: translateY(-120px); }
+    100% { transform: translateY(-150px); }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-20px); }
+    60% { transform: translateY(-10px); }
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#search-input {
+    width: 200px;
+    padding: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+#search-input::placeholder {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.search-container button {
+    padding: 8px 12px;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: -5px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-container button i {
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.search-container button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(0, 123, 255, 0.7);
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: transform 0.5s;
+    z-index: 0;
+}
+
+.search-container button:hover::before {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.search-container button:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+    transform: scale(1.05);
+}
+
+.refresh-container {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+    transform: translateY(-50%);
+}
+
+#refresh-button {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#refresh-button i {
+    font-size: 20px;
+}
+
+#refresh-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.refresh-caption {
+    margin-top: 5px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+    </style>
+</head>
+<div class="robot-container">
+    <img src="wiggle-happy.gif" alt="Cute Robot" class="robot">
+    <div class="robot-messages">
+        <div class="message-wrapper">
+            <p class="message">Offer 1: free editing</p>
+            <p class="message">Offer 2: full content!</p>
+            <p class="message">Offer 3: Free Shipping!</p>
+            <p class="message">Offer 4: 20% off</p>
+            <p class="message">Offer 5: free document for project</p>
+        </div>
+    </div>
+</div>
+
+<body>
+    <div class="watermark-small"></div>
+    <div class="watermark-large">9745745513</div>
+    
+    <div class="content">
+        <h1>Mechanical Engineering Seminar Topics whtsapp msg for reports</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search topics here..." onkeyup="searchFunction()">
+            <button type="button"><i class="fas fa-search"></i></button>
+        </div>
+        <ul id="topics-list">
+            <li>Advanced Manufacturing Processes</li>
+            <li>Robotics and Automation</li>
+            <li>Renewable Energy Technologies</li>
+            <li>3D Printing and Additive Manufacturing</li>
+            <li>Nanotechnology in Mechanical Engineering</li>
+            <li>Composite Materials</li>
+            <li>Smart Materials and Structures</li>
+            <li>CAD/CAM/CAE</li>
+            <li>Biomechanics</li>
+            <li>Mechatronics</li>
+            <li>Fluid Mechanics and Machinery</li>
+            <li>Thermal Engineering</li>
+            <li>Heat Transfer and Heat Exchangers</li>
+            <li>Vibration and Noise Control</li>
+            <li>Automotive Engineering</li>
+            <li>3D Printing in Biomedical Engineering</li>
+        <li>Additive Manufacturing for Aerospace Applications</li>
+        <li>Advanced Composite Materials for Automotive</li>
+        <li>Advanced Control Systems for Industrial Automation</li>
+        <li>Advanced Heat Exchangers for Power Plants</li>
+        <li>Advanced Surface Coatings for Corrosion Resistance</li>
+        <li>AI in Predictive Maintenance for Manufacturing</li>
+        <li>Artificial Intelligence in Mechanical Design</li>
+        <li>Autonomous Drones for Infrastructure Inspection</li>
+        <li>Autonomous Vehicles: Advanced Braking Systems</li>
+        <li>Bio-inspired Robotics for Medical Applications</li>
+        <li>Biohybrid Systems: Integrating Biological and Artificial Components</li>
+        <li>Biomass Energy Systems</li>
+        <li>Biomedical Applications of 3D Printing</li>
+        <li>Carbon Capture and Storage Systems</li>
+        <li>CFD in HVAC Systems Design</li>
+        <li>Cryogenic Engineering for Space Applications</li>
+        <li>Design of Electric Propulsion Systems for Aircraft</li>
+        <li>Development of Smart Materials</li>
+        <li>Drone Technology in Agriculture</li>
+        <li>Electric and Hybrid Vehicles: Technological Advances</li>
+        <li>Electrospinning of Nanofibers for Various Applications</li>
+        <li>Exoskeletons for Rehabilitation and Assistance</li>
+        <li>Flexible Electronics in Wearable Devices</li>
+        <li>Fluid Power Systems in Heavy Machinery</li>
+        <li>Flying Car Technology</li>
+        <li>Green Manufacturing Processes</li>
+        <li>Heat Transfer Enhancement Techniques</li>
+        <li>High-Performance Composite Materials in Aerospace</li>
+        <li>High-Speed Rail Transportation Systems</li>
+        <li>Hydraulic Hybrid Vehicles</li>
+        <li>Hydrogen Fuel Cells for Sustainable Transportation</li>
+        <li>Human-Robot Collaboration in Manufacturing</li>
+        <li>Innovations in Wind Turbine Design</li>
+        <li>Intelligent Transportation Systems</li>
+        <li>IoT in Mechanical Systems Monitoring</li>
+        <li>Laser Cutting and Welding Technologies</li>
+        <li>Machine Learning in Predictive Maintenance</li>
+        <li>Magnetic Levitation Systems in Transportation</li>
+        <li>Marine Renewable Energy Technologies</li>
+        <li>MEMS (Micro-Electro-Mechanical Systems) in Industrial Automation</li>
+        <li>Microfluidics for Lab-on-a-Chip Devices</li>
+        <li>Nanotechnology in Mechanical Engineering</li>
+        <li>Noise Control Engineering in Urban Environments</li>
+        <li>Piezoelectric Energy Harvesting Systems</li>
+        <li>Plasma Cutting Technology</li>
+        <li>Rapid Prototyping Techniques in Product Development</li>
+        <li>Recycling and Reuse of Industrial Materials</li>
+        <li>Renewable Energy Systems for Mechanical Applications</li>
+        <li>Robotic Process Automation in Manufacturing</li>
+        <li>Robotic Surgery Systems in Healthcare</li>
+        <li>Robotics in Hazardous Environments Exploration</li>
+        <li>Self-Healing Materials for Structural Applications</li>
+        <li>Smart Grid Technologies for Energy Distribution</li>
+        <li>Smart Sensors and Actuators for IoT</li>
+        <li>Solar Thermal Energy Systems for Industrial Applications</li>
+        <li>Spacecraft Propulsion Technologies</li>
+        <li>Sustainable Design of Building Envelopes</li>
+        <li>Sustainable Packaging Solutions</li>
+        <li>Swarm Robotics for Collaborative Tasks</li>
+        <li>Tidal Energy Conversion Systems</li>
+        <li>Ultrasonic Welding in Manufacturing</li>
+        <li>Unmanned Aerial Vehicles (UAVs) for Environmental Monitoring</li>
+        <li>Vibration Control in Mechanical Systems</li>
+        <li>Virtual Reality in Mechanical Design and Simulation</li>
+        <li>Waste Heat Recovery Systems in Industrial Processes</li>
+        <li>Wearable Technology for Health Monitoring</li>
+        <li>Wind Energy Systems: Innovations and Challenges</li>
+        <li>Zero Emission Vehicles: Technologies and Trends</li>
+        <li>3D Bioprinting for Tissue Engineering</li>
+        <li>Advanced Braking Systems for Autonomous Vehicles</li>
+        <li>Advanced Materials for High-Temperature Applications</li>
+        <li>Advanced Robotic Manipulators for Manufacturing</li>
+        <li>Autonomous Construction Machinery</li>
+        <li>Bio-inspired Design in Mechanical Engineering</li>
+        <li>Carbon Fiber Reinforced Polymers in Automotive Design</li>
+        <li>Design and Analysis of Composite Materials</li>
+        <li>Electric Propulsion for Spacecraft</li>
+        <li>High-Altitude Atmospheric Research Platforms</li>
+        <li>Human Augmentation Technologies</li>
+        <li>Innovative Approaches to Carbon Fiber Reinforced Polymers</li>
+        <li>Laser Ignition Systems for Gasoline Engines</li>
+        <li>Magneto-Rheological Fluids in Dampers</li>
+        <li>Nanomaterials in Mechanical Systems</li>
+        <li>Non-Pneumatic Tyres for Heavy Vehicles</li>
+        <li>Renewable Energy in Mechanical Systems</li>
+        <li>Self-Driving Cars: Technological Innovations</li>
+        <li>Smart Cities and Intelligent Infrastructure</li>
+        <li>Smart Factories in Industry 4.0</li>
+        <li>Sustainable Energy Solutions for Mechanical Engineering</li>
+        <li>Thermoelectric Energy Conversion Systems</li>
+        <li>Variable Geometry Turbochargers in Engines</li>
+        <li>Wireless Charging Technologies for Electric Vehicles</li>
+        <li>Zero-Waste Manufacturing Processes</li>
+        <li>3D Printing of Metals for Aerospace</li>
+        <li>Advanced Manufacturing Techniques for Carbon Composites</li>
+        <li>AI-Driven Optimization in Manufacturing</li>
+        <li>Artificial Intelligence in Robotics</li>
+        <li>Autonomous Agricultural Machines</li>
+        <li>Automotive Aerodynamics</li>
+        <li>Biodegradable Polymers in Engineering</li>
+        <li>Biomimetic Engineering Solutions</li>
+        <li>Carbon Nanotube Reinforced Composites</li>
+        <li>Collaborative Robots in Industry</li>
+        <li>Compressed Air Energy Storage Systems</li>
+        <li>Design and Optimization of Heat Sinks</li>
+        <li>Design of Autonomous Underwater Vehicles</li>
+        <li>Design of High-Performance Electric Motors</li>
+        <li>Development of Biofuels for Aviation</li>
+        <li>Development of High-Efficiency Solar Cells</li>
+        <li>Electrochemical Machining Processes</li>
+        <li>Electrohydrodynamic Printing</li>
+        <li>Energy-Efficient HVAC Systems</li>
+        <li>Flexible Manufacturing Systems</li>
+        <li>Fluid Dynamics in Turbomachinery</li>
+        <li>Fuel Cell Technologies for Transportation</li>
+        <li>Graphene in Mechanical Engineering</li>
+        <li>High-Strength Lightweight Alloys</li>
+        <li>Hybrid Composite Structures</li>
+        <li>Innovations in Magnetic Refrigeration</li>
+        <li>Intelligent Control Systems for Robotics</li>
+        <li>IoT Applications in Mechanical Systems</li>
+        <li>Laser Additive Manufacturing</li>
+        <li>Machine Learning for Predictive Maintenance</li>
+        <li>Magnetic Shape Memory Alloys</li>
+        <li>Mechanical Design Automation</li>
+        <li>Micro-Mechanical Systems for Energy Harvesting</li>
+        <li>Micro-Optomechanical Systems</li>
+        <li>Miniaturized Heat Exchangers</li>
+        <li>Modular Robotics for Manufacturing</li>
+        <li>Nanocomposites for Structural Applications</li>
+        <li>Nanofluids in Heat Transfer Applications</li>
+        <li>Next-Generation Lithium Batteries</li>
+        <li>Piezoelectric Materials for Sensors</li>
+        <li>Plastic Welding Techniques</li>
+        <li>Recycling of Rare Earth Metals</li>
+        <li>Renewable Energy Systems Integration</li>
+        <li>Robotic Exoskeletons for Industrial Use</li>
+        <li>Robotics in Deep-Sea Exploration</li>
+        <li>Self-Assembling Materials</li>
+        <li>Shape Memory Polymers</li>
+        <li>Smart Actuators for Robotics</li>
+        <li>Smart Grids for Renewable Energy</li>
+        <li>Solid State Welding Techniques</li>
+        <li>Space Robotics for Planetary Exploration</li>
+        <li>Structural Health Monitoring Systems</li>
+        <li>Sustainable Building Technologies</li>
+        <li>Thermal Management in Electronics</li>
+        <li>Tribology in Machine Design</li>
+        <li>Ultra-High Strength Steels</li>
+        <li>Unmanned Ground Vehicles</li>
+        <li>Variable Compression Ratio Engines</li>
+        <li>Vibration Isolation in Mechanical Systems</li>
+        <li>Virtual Prototyping in Design</li>
+        <li>Waste-to-Energy Technologies</li>
+        <li>Wind Tunnel Testing Techniques</li>
+        <li>Wireless Sensor Networks in Engineering</li>
+        <li>3D Printing of Medical Devices</li>
+        <li>Advanced Ceramics in Engineering</li>
+        <li>AI-Based Control Systems</li>
+        <li>Autonomous Robots for Hazardous Environments</li>
+        <li>Biocompatible Materials for Implants</li>
+        <li>Bioengineering for Regenerative Medicine</li>
+        <li>Carbon Capture Technologies</li>
+        <li>Cyber-Physical Systems in Manufacturing</li>
+        <li>Development of Next-Gen Batteries</li>
+        <li>Electric Aircraft Propulsion</li>
+        <li>Energy-Efficient Building Design</li>
+        <li>Fluid-Structure Interaction Analysis</li>
+        <li>Fuel Cells for Portable Power</li>
+        <li>Graphene-Based Sensors</li>
+        <li>High-Efficiency Combustion Engines</li>
+        <li>Hydrogen Storage Systems</li>
+        <li>Intelligent Manufacturing Systems</li>
+        <li>Laser Micro-Machining</li>
+        <li>Mechanical Behavior of Nanomaterials</li>
+        <li>Micro-Electro-Mechanical Systems (MEMS)</li>
+        <li>Nanofabrication Techniques</li>
+        <li>Optimization of Composite Structures</li>
+        <li>Photovoltaic Systems Design</li>
+        <li>Robotic Welding Systems</li>
+        <li>Self-Powered Sensors</li>
+        <li>Smart Fluid Systems</li>
+        <li>Structural Dynamics and Vibration Control</li>
+        <li>Thermal Energy Storage Systems</li>
+        <li>Ultrasonic Testing in Non-Destructive Evaluation</li>
+        <li>Zero-Emission Building Design</li>
+        <li>Advanced Cryogenic Systems</li>
+        <li>Autonomous Underwater Vehicles</li>
+        <li>Biodegradable Electronics</li>
+        <li>Hydraulic Fracturing Technology</li>
+        <li>Intelligent Fault Diagnosis Systems</li>
+        <li>Laser-Based Manufacturing Processes</li>
+        <li>Micro-Robotics for Precision Engineering</li>
+        <li>Nanomaterials for Drug Delivery Systems</li>
+        <li>Smart Textiles for Wearable Technology</li>
+        <li>Additive Manufacturing of Super Alloys</li>
+        <li>Advanced Control Strategies for Industrial Robots</li>
+        <li>Advanced Heat Transfer Mechanisms in Microchannels</li>
+        <li>AI-Based Optimization of Mechanical Systems</li>
+        <li>AI-Driven Predictive Maintenance</li>
+        <li>Application of Carbon Nanotubes in Composites</li>
+        <li>Autonomous Drones for Search and Rescue</li>
+        <li>Automated Handling Systems in Manufacturing</li>
+        <li>Bio-Inspired Soft Robotics</li>
+        <li>Biomechanical Analysis of Prosthetic Devices</li>
+        <li>Carbon Capture Technologies in Power Plants</li>
+        <li>Co-Digestion of Agricultural Wastes for Biogas Production</li>
+        <li>Computational Fluid Dynamics in HVAC Systems</li>
+        <li>Design and Analysis of High-Speed Gear Systems</li>
+        <li>Design of Energy-Efficient HVAC Systems</li>
+        <li>Development of Autonomous Underwater Vehicles</li>
+        <li>Development of Smart Composite Materials</li>
+        <li>Digital Twins for Predictive Maintenance</li>
+        <li>Dynamic Design of Planetary Rover Systems</li>
+        <li>Electrospinning Techniques for Nanofibers</li>
+        <li>Energy Harvesting from Vibrations</li>
+        <li>Flexible Robots for Indoor Assistance</li>
+        <li>Fluid-Structure Interaction in Turbomachinery</li>
+        <li>Heat Transfer in Microgravity Conditions</li>
+        <li>High-Performance Materials for Aerospace Applications</li>
+        <li>Hybrid Electric Propulsion Systems for Aircraft</li>
+        <li>Hydrogen Fuel Cells for Automotive Applications</li>
+        <li>Intelligent Fault Diagnosis in Mechanical Systems</li>
+        <li>Internet of Things (IoT) in Mechanical Engineering</li>
+        <li>Laser Powder Bed Fusion for Metal Additive Manufacturing</li>
+        <li>Machine Learning for Structural Health Monitoring</li>
+        <li>Magnetic Refrigeration Systems</li>
+        <li>Mechanical Properties of Fiber-Reinforced Composites</li>
+        <li>Micro-Electromechanical Systems (MEMS) in Biomedical Applications</li>
+        <li>Microstructural Analysis of Welded Joints</li>
+        <li>Nanomaterials in Energy Storage Systems</li>
+        <li>Optimization of Die-Sinking EDM Process</li>
+        <li>Performance Analysis of Solar Thermal Collectors</li>
+        <li>Recycling of Rare Earth Elements</li>
+        <li>Robotic Exoskeletons for Industrial Applications</li>
+        <li>Robotics in Hazardous Environment Exploration</li>
+        <li>Self-Healing Materials in Structural Applications</li>
+        <li>Shape Memory Alloys in Actuator Design</li>
+        <li>Smart Sensors for Structural Health Monitoring</li>
+        <li>Solar-Powered Desalination Systems</li>
+        <li>Sustainable Manufacturing Practices</li>
+        <li>Thermal Energy Storage in Phase Change Materials</li>
+        <li>Tribological Properties of Advanced Coatings</li>
+        <li>Ultra-High Strength Steels in Automotive Design</li>
+        <li>Unmanned Aerial Systems for Environmental Monitoring</li>
+        <li>Variable Geometry Turbochargers</li>
+        <li>Vibration Control in High-Speed Rotating Machinery</li>
+        <li>Wearable Robotics for Rehabilitation</li>
+        <li>Wind Turbine Blade Design for Improved Efficiency</li>
+        <li>Zero-Emission Technologies in Transportation</li>
+        <li>3D Bioprinting of Tissue Constructs</li>
+        <li>Advanced Cooling Techniques for Electronics</li>
+        <li>Advanced Manufacturing of Lightweight Structures</li>
+        <li>AI in Dynamic Systems Modeling</li>
+        <li>Autonomous Robotic Systems in Agriculture</li>
+        <li>Bioinspired Materials for Engineering Applications</li>
+        <li>Biomass Conversion Technologies</li>
+        <li>Coaxial Electrospinning for Fiber Fabrication</li>
+        <li>Computational Models for Smart Materials</li>
+        <li>Development of High-Performance Thermal Barriers</li>
+        <li>Dynamic Compliance in Robotic Systems</li>
+        <li>Electric Propulsion Systems for Marine Vessels</li>
+        <li>Energy-Efficient Building Envelopes</li>
+        <li>Enhanced Oil Recovery Techniques</li>
+        <li>Friction Stir Welding of Dissimilar Metals</li>
+        <li>Green Composites for Sustainable Engineering</li>
+        <li>High-Frequency Vibration-Assisted Machining</li>
+        <li>Hydrodynamic Lubrication in Bearings</li>
+        <li>Innovative Approaches to Gear Design</li>
+        <li>Laser-Induced Forward Transfer in Microfabrication</li>
+        <li>Machine Learning for Fluid Dynamics Simulations</li>
+        <li>Magnetic Shape Memory Alloys in Actuation</li>
+        <li>Mechanical Behavior of Nanocomposites</li>
+        <li>Microfluidic Devices for Biomedical Applications</li>
+        <li>Nanofluid Applications in Heat Transfer</li>
+        <li>Optimization of Injection Molding Processes</li>
+        <li>Performance Analysis of Wind Energy Systems</li>
+        <li>Recyclable Polymers in Automotive Industry</li>
+        <li>Robotic Manipulators for Precise Assembly</li>
+        <li>Self-Powered Microsystems</li>
+        <li>Smart Coatings for Corrosion Protection</li>
+        <li>Structural Optimization of Lightweight Vehicles</li>
+        <li>Sustainable Design of Urban Infrastructure</li>
+        <li>Thermal Conductivity Enhancement in Nanomaterials</li>
+        <li>Turbulence Modeling in Aerodynamic Applications</li>
+        <li>Ultra-Precision Machining Techniques</li>
+        <li>Variable Stiffness Composites</li>
+        <li>Wear Resistance in Advanced Engineering Alloys</li>
+        <li>Wireless Power Transmission for Electric Vehicles</li>
+        <li>Zero-Waste Strategies in Manufacturing</li>
+        <li>Adaptive Control of Autonomous Vehicles</li>
+        <li>Aerodynamic Optimization of Wind Turbine Blades</li>
+        <li>AI-Driven Design of Mechanical Systems</li>
+        <li>Alloy Development for High-Temperature Applications</li>
+        <li>Analysis of Microstructural Changes in Heat-Treated Alloys</li>
+        <li>Application of Genetic Algorithms in Mechanical Design</li>
+        <li>Augmented Reality for Mechanical System Repair</li>
+        <li>Autonomous Drone Swarms for Surveillance</li>
+        <li>Biomimetic Approaches in Fluid Mechanics</li>
+        <li>Blockchain for Secure Manufacturing Processes</li>
+        <li>Carbon Fiber Reinforcement in Additive Manufacturing</li>
+        <li>Computational Methods in Nano-Mechanical Systems</li>
+        <li>Control Systems for Robotic Surgery</li>
+        <li>Design and Fabrication of Micro-Actuators</li>
+        <li>Design for Additive Manufacturing with Metals</li>
+        <li>Development of Advanced Triboelectric Nanogenerators</li>
+        <li>Digital Twin for Predictive Maintenance in HVAC Systems</li>
+        <li>Dynamic Behavior of Composite Rotors</li>
+        <li>Eco-Friendly Materials for Automotive Industry</li>
+        <li>Electromagnetic Forming of Lightweight Materials</li>
+        <li>Fatigue Analysis of Composite Wind Turbine Blades</li>
+        <li>Finite Element Analysis of Human Joints</li>
+        <li>Fluid Dynamics in Microgravity Environments</li>
+        <li>Heat Pipe Design for Electronics Cooling</li>
+        <li>High-Pressure Hydrogen Storage Systems</li>
+        <li>Hybrid Energy Systems for Remote Areas</li>
+        <li>Impact of Nanofluids on Heat Transfer Efficiency</li>
+        <li>Innovative Cooling Techniques for High-Power Lasers</li>
+        <li>Intelligent Materials for Structural Health Monitoring</li>
+        <li>Laser Ablation Techniques for Surface Engineering</li>
+        <li>Magnetorheological Dampers in Vibration Control</li>
+        <li>Mechanical Behavior of Bio-Inspired Composites</li>
+        <li>Micro-Scale Energy Harvesting Systems</li>
+        <li>Modeling and Simulation of Smart Grid Systems</li>
+        <li>Nanomaterial Coatings for Wear Resistance</li>
+        <li>Numerical Modeling of Combustion Processes</li>
+        <li>Optimization of Battery Thermal Management Systems</li>
+        <li>Performance Analysis of Solar-Powered Refrigeration</li>
+        <li>Photovoltaic Integration with Urban Infrastructure</li>
+        <li>Piezoresistive Sensors for Structural Monitoring</li>
+        <li>Plasma-Assisted Combustion in Jet Engines</li>
+        <li>Polymeric Nanocomposites for Lightweight Structures</li>
+        <li>Predictive Analytics in Manufacturing Systems</li>
+        <li>Quantum Computing in Material Science</li>
+        <li>Reconfigurable Robotics for Space Applications</li>
+        <li>Self-Cleaning Surfaces for Solar Panels</li>
+        <li>Simulation of Acoustic Waves in Solid Materials</li>
+        <li>Smart Fabrics for Wearable Electronics</li>
+        <li>Solar Desalination Technologies for Clean Water</li>
+        <li>Sustainable Manufacturing Using Biodegradable Polymers</li>
+        <li>Thermal Conductivity of Graphene Composites</li>
+        <li>Thermo-Mechanical Analysis of Nuclear Reactor Components</li>
+        <li>Turbulence Modeling in Supersonic Flows</li>
+        <li>Ultrasonic Welding for Advanced Composite Materials</li>
+        <li>Unmanned Systems for Disaster Response</li>
+        <li>Vibration Analysis of Rotating Machinery</li>
+        <li>Waste Heat Recovery in Industrial Processes</li>
+        <li>Wearable Health Monitoring Systems Using IoT</li>
+        <li>Zero-Energy Buildings: Design and Optimization</li>
+        <li>3D Printing of Multi-Material Components</li>
+        <li>Advanced Manufacturing of Biodegradable Stents</li>
+        <li>AI-Enhanced Structural Integrity Analysis</li>
+        <li>Applications of Soft Robotics in Medical Devices</li>
+        <li>Autonomous Surface Vessels for Ocean Monitoring</li>
+        <li>Bio-Lubricants for Sustainable Engineering</li>
+        <li>Computational Modeling of Fracture Mechanics</li>
+        <li>Design and Control of Exoskeletons for Rehabilitation</li>
+        <li>Development of Anti-Icing Coatings</li>
+        <li>Digital Manufacturing Platforms for Customization</li>
+        <li>Dynamic Analysis of Floating Offshore Structures</li>
+        <li>Electromechanical Energy Conversion Systems</li>
+        <li>Fabrication of Microfluidic Devices for Diagnostics</li>
+        <li>Flow-Induced Vibrations in Piping Systems</li>
+        <li>Heat Transfer in Porous Media</li>
+        <li>High-Fidelity Modeling of Electric Vehicle Batteries</li>
+        <li>Hydrodynamic Analysis of Marine Propellers</li>
+        <li>Impact of Additive Manufacturing on Tool Design</li>
+        <li>Innovative Cooling Techniques for Data Centers</li>
+        <li>Intelligent Fault Detection in Gear Systems</li>
+        <li>Laser Welding of Dissimilar Metals</li>
+        <li>Machine Learning for Energy Management Systems</li>
+        <li>Magnetic Refrigeration Systems for Green Cooling</li>
+        <li>Mechanical Characterization of Advanced Polymers</li>
+        <li>Microbial Fuel Cells for Wastewater Treatment</li>
+        <li>Modeling Thermal Stresses in Composite Materials</li>
+        <li>Nanoparticle Reinforced Metal Matrix Composites</li>
+        <li>Optimization of Hybrid Energy Storage Systems</li>
+        <li>Performance Analysis of Perovskite Solar Cells</li>
+        <li>Photonic Crystals for Thermal Insulation</li>
+        <li>Plasma Spray Coatings for Corrosion Protection</li>
+        <li>Recycling of Advanced Composite Materials</li>
+        <li>Robotic Automation in Precision Agriculture</li>
+        <li>Self-Assembling Nanomaterials for Flexible Electronics</li>
+        <li>Simulation of Fluid Dynamics in Biomedical Devices</li>
+        <li>Smart Actuators for Adaptive Structures</li>
+        <li>Solar-Powered Water Purification Systems</li>
+        <li>Sustainable Materials for 3D Printing</li>
+        <li>Thermal Barrier Coatings for Turbine Blades</li>
+        <li>Tribology of Bio-Inspired Surfaces</li>
+        <li>Ultra-High Vacuum Systems for Advanced Research</li>
+        <li>Unmanned Aerial Vehicles for Agriculture</li>
+        <li>Virtual Reality for Industrial Training</li>
+        <li>Magneto-Fluid Dynamics in Cooling Systems</li>
+        <li>Mechanical Metamaterials for Impact Resistance</li>
+        <li>Micro-Mechanical Sensors for Environmental Monitoring</li>
+        <li>Nanofluidics for Drug Delivery Systems</li>
+        <li>Numerical Simulation of Acoustic Wave Propagation</li>
+        <li>Optimization of Piezoelectric Energy Harvesters</li>
+        <li>Performance of High-Temperature Fuel Cells</li>
+        <li>Photovoltaic Systems for Rural Electrification</li>
+        <li>Plasma Arc Welding for Advanced Materials</li>
+        <li>Predictive Maintenance in Smart Factories</li>
+        <li>Quantum Dots for Photovoltaic Applications</li>
+        <li>Reinforced Polymers in Lightweight Construction</li>
+        <li>Robotic Exoskeletons for Military Applications</li>
+        <li>Self-Healing Polymers for Aerospace Structures</li>
+        <li>Simulation of Combustion in Hydrogen Engines</li>
+        <li>Smart Grid Technologies for Energy Management</li>
+        <li>Solar Thermal Energy Storage Systems</li>
+        <li>Sustainable Materials for Eco-Friendly Manufacturing</li>
+        <li>Thermal Conductivity in Nano-Engineered Materials</li>
+        <li>Thermoelectric Materials for Waste Heat Recovery</li>
+        <li>Tribology of Lubricants in Micro-Machining</li>
+        <li>Ultra-Fast Laser Machining for Precision Manufacturing</li>
+        <li>Unmanned Aerial Systems for Forest Monitoring</li>
+        <li>Vibration Damping in Mechanical Systems</li>
+        <li>Wearable Technology for Industrial Safety</li>
+        <li>Wind Energy Harvesting from High-Rise Buildings</li>
+        <li>Zero-Emission Power Generation Technologies</li>
+        <li>3D Printing with Recycled Materials</li>
+        <li>Advanced Cooling Systems for Quantum Computers</li>
+        <li>AI for Real-Time Process Control</li>
+        <li>Autonomous Robots for Hazardous Waste Management</li>
+        <li>Bioinspired Adhesives for Medical Applications</li>
+        <li>Carbon Capture Materials for Environmental Protection</li>
+        <li>Condition Monitoring of Structural Components</li>
+        <li>Design of Self-Deploying Space Structures</li>
+        <li>Development of Bio-Based Composite Materials</li>
+        <li>Digital Twin for Wind Turbine Optimization</li>
+        <li>Dynamic Modeling of Marine Engines</li>
+        <li>Electrochemical Machining for Aerospace Components</li>
+        <li>Energy-Efficient Building Technologies</li>
+        <li>Flexible Piezoelectric Nanogenerators</li>
+        <li>Fluid Dynamics in Micro-Gravity Environments</li>
+        <li>Graphene Oxide for Water Filtration Systems</li>
+        <li>High-Pressure Water Jet Cutting</li>
+        <li>Hydrodynamic Bearings for High-Speed Turbines</li>
+        <li>Impact of AI on Mechanical System Design</li>
+        <li>Intelligent Robotics for Precision Agriculture</li>
+        <li>Laser Sintering of Advanced Ceramics</li>
+        <li>Lightweight Nanostructured Materials</li>
+        <li>Machine Vision in Quality Control</li>
+        <li>Magnetic Fluid Seals for High-Temperature Applications</li>
+        <li>Mechanical Properties of Recycled Plastics</li>
+        <li>Microfabrication Techniques for MEMS Devices</li>
+        <li>Nanoporous Materials for Energy Applications</li>
+        <li>Numerical Modeling of Turbulent Flows</li>
+        <li>Optimization of Additive Manufacturing Processes</li>
+        <li>Performance Analysis of Hybrid Electric Vehicles</li>
+        <li>Photonic Devices for High-Efficiency Lighting</li>
+        <li>Plasma-Assisted Surface Hardening</li>
+        <li>Rapid Prototyping of Biomedical Devices</li>
+        <li>Reconfigurable Manufacturing Systems</li>
+        <li>Robotic Automation in Material Handling</li>
+        <li>Self-Assembly of Nanostructures for Sensors</li>
+        <li>Simulation of Multi-Phase Flow in Pipes</li>
+        <li>Smart Materials for Adaptive Wing Structures</li>
+        <li>Solar Power Integration in Smart Grids</li>
+        <li>Sustainable Approaches to Metal Recycling</li>
+        <li>Thermal Management in LED Systems</li>
+        <li>Tribological Performance of Green Lubricants</li>
+        <li>Ultra-Lightweight Composite Materials</li>
+        <li>3D-Printed Engine Components for Space Applications</li>
+        <li>Advanced Anti-Icing Coatings for Aircraft</li>
+        <li>AI for Structural Damage Detection</li>
+        <li>Autonomous Underwater Gliders</li>
+        <li>Bio-Inspired Surfaces for Drag Reduction</li>
+        <li>Carbon Nanotube Yarn in Composite Materials</li>
+        <li>Computational Modeling of Phase-Change Materials</li>
+        <li>Design of Acoustic Metamaterials</li>
+        <li>Development of Magnetocaloric Refrigeration Systems</li>
+        <li>Digital Twins for Real-Time Monitoring of Mechanical Systems</li>
+        <li>Dynamic Analysis of Solar Trackers</li>
+        <li>Electromagnetic Interference Shielding in Aerospace</li>
+        <li>Energy-Efficient Hydraulic Systems</li>
+        <li>Fabrication of Micro-Optomechanical Systems (MOMS)</li>
+        <li>Fluid Dynamics in Inkjet Printing</li>
+        <li>Graphene-Based Heat Spreaders</li>
+        <li>High-Frequency Vibration Isolation</li>
+        <li>Hybrid Electric Marine Propulsion Systems</li>
+        <li>Impact-Resistant Nanocomposites</li>
+        <li>Intelligent Piping and Instrumentation Systems</li>
+        <li>Laser Induced Forward Transfer (LIFT) for Microfabrication</li>
+        <li>Lightweight Structures for Aerospace Applications</li>
+        <li>Machine Learning Algorithms for Material Design</li>
+        <li>Magnetic Shape Memory Alloys in Biomedical Devices</li>
+        <li>Mechanical Properties of Self-Healing Polymers</li>
+        <li>Microgravity Effects on Material Properties</li>
+        <li>Nanofluid Applications in Nuclear Reactors</li>
+        <li>Numerical Simulation of Bio-Inspired Flow Systems</li>
+        <li>Optimization of Fuel Injection Systems</li>
+        <li>Performance Analysis of Solar Chimneys</li>
+        <li>Photovoltaic Systems with Bifacial Modules</li>
+        <li>Plasma Actuators for Flow Control</li>
+        <li>Predictive Modeling of Creep in Metals</li>
+        <li>Quantum Mechanics in Mechanical Engineering</li>
+        <li>Real-Time Control Systems for Autonomous Vehicles</li>
+        <li>Robust Design of Mechanical Systems under Uncertainty</li>
+        <li>Self-Propelled Micromachines</li>
+        <li>Simulation of Nano-Fluidic Systems</li>
+        <li>Smart Alloys for Actuation and Sensing</li>
+        <li>Solar Desalination Using Nano-Enhanced Fluids</li>
+        <li>Sustainable Manufacturing with Bio-Materials</li>
+        <li>Thermal Barrier Coatings for Hypersonic Vehicles</li>
+        <li>Thermoelectric Generators for Waste Heat Recovery</li>
+        <li>Triboelectric Nanogenerators for Wearable Devices</li>
+        <li>Ultra-Light Aerogels for Thermal Insulation</li>
+        <li>Unmanned Aerial Vehicles for Atmospheric Research</li>
+        <li>Variable Stiffness Laminates in Aerospace Structures</li>
+        <li>Vibration Control in MEMS Devices</li>
+        <li>Wearable Exoskeletons for Enhanced Mobility</li>
+        <li>Wind Tunnel Testing of Biologically-Inspired Wings</li>
+        <li>Zero-Energy Water Heating Systems</li>
+        <li>3D Bioprinting for Cartilage Regeneration</li>
+        <li>Advanced Metrology Techniques for Nanomanufacturing</li>
+        <li>AI-Driven Optimization of Manufacturing Processes</li>
+        <li>Autonomous Surface Mining Vehicles</li>
+        <li>Bio-Inspired Design of Robotic Arms</li>
+        <li>Carbon Nanotube Sensors for Structural Health Monitoring</li>
+        <li>Computational Aeroacoustics for Noise Reduction</li>
+        <li>Design of Electrostatic Microactuators</li>
+        <li>Development of Superhydrophobic Surfaces</li>
+        <li>Digital Twin for Real-Time Fault Diagnosis</li>
+        <li>Dynamic Control of Soft Robotic Systems</li>
+        <li>Electromechanical Energy Harvesting Devices</li>
+        <li>Energy-Efficient Pneumatic Systems</li>
+        <li>Flexible Electronics for Mechanical Applications</li>
+        <li>Fluid Dynamics in Lab-on-a-Chip Systems</li>
+        <li>Graphene Oxide in Composite Reinforcement</li>
+        <li>High-Performance Alloys for Turbine Blades</li>
+        <li>Hybrid Manufacturing for Aerospace Components</li>
+        <li>Impact of AI on Predictive Maintenance</li>
+        <li>Intelligent Systems for Water Resource Management</li>
+        <li>Laser Cladding for Wear and Corrosion Resistance</li>
+        <li>Lightweight Metal Matrix Composites</li>
+        <li>Machine Learning for Structural Health Monitoring</li>
+        <li>Magnetic Levitation for Vibration Isolation</li>
+        <li>Mechanical Properties of Ultra-High Molecular Weight Polyethylene</li>
+        <li>Microfluidic Devices for Cell Sorting</li>
+        <li>Nanocomposite Foams for Impact Energy Absorption</li>
+        <li>Numerical Analysis of Heat Exchangers</li>
+        <li>Optimization of Wind Farm Layouts</li>
+        <li>Performance Enhancement of Fuel Cells</li>
+        <li>Photonic Crystals for Thermal Management</li>
+        <li>Plasma Etching in Semiconductor Manufacturing</li>
+        <li>Rapid Prototyping of Soft Actuators</li>
+        <li>Recycling of Rare Metals in Electronic Waste</li>
+        <li>Robotic Systems for Underwater Exploration</li>
+        <li>Self-Organizing Nanostructures</li>
+        <li>Simulation of Electromagnetic Wave Propagation</li>
+        <li>Smart Fabrics for Medical Monitoring</li>
+        <li>Solar Energy Systems for Remote Areas</li>
+        <li>Sustainable Approaches to Composite Manufacturing</li>
+        <li>Thermal Energy Harvesting from Roadways</li>
+        <li>Tribological Performance of Nano-Lubricants</li>
+        <li>Ultra-Thin Coatings for Corrosion Resistance</li>
+        <li>Unmanned Aerial Systems for Wildlife Monitoring</li>
+        <li>Virtual Prototyping for Aerospace Engineering</li>
+        <li>Wearable Technology for Athlete Performance Monitoring</li>
+        <li>Wind Tunnel Design for Urban Wind Studies</li>
+        <li>Development of energy-efficient HVAC systems for buildings</li>
+        <li>Performance analysis of different types of fuel cells for power generation</li>
+        <li>Feasibility of using biofuels in internal combustion engines</li>
+        <li>Micro-scale combustion engine for portable power generation</li>
+        <li>Mechanics of soft materials for biomedical applications</li>
+        <li>Exoskeletons for rehabilitation and assistance in mobility</li>
+        <li>Effects of vehicle aerodynamics on fuel consumption</li>
+        <li>Ocean wave energy harvesting technologies</li>
+        <li>Optimization of energy-efficient refrigeration systems</li>
+        <li>Dynamics of flexible structures subjected to dynamic loads</li>
+        <li>Sensors and actuators for structural health monitoring</li>
+        <li>Cooling techniques in electronics</li>
+        <li>Potential of hydrogen fuel cells for automotive applications</li>
+        <li>Small-scale hydroelectric power generator design and testing</li>
+        <li>Mechanics of cellular materials for impact absorption</li>
+        <li>Unmanned aerial vehicles (drones) for environmental monitoring</li>
+        <li>Efficiency of different propulsion systems in space exploration</li>
+        <li>Micro-scale energy harvesting technologies for powering wireless sensors</li>
+        <li>Design and simulation of enhanced smart cantilever assembly for active vibration control</li>
+        <li>Injection mold design for manufacturing of cup</li>
+        <li>Accurate computation of transverse shear stresses in smart composite plates</li>
+        <li>Firmware of indigenous and custom-built flexible robots for indoor assistance</li>
+        <li>Mechanical properties analysis of Kenaf–Grewia–hair fiber-reinforced composite</li>
+        <li>Co-digestion of agricultural and plant wastes and cow dung for biogas production</li>
+        <li>Growth percentage prediction of sintered compacts using neural network technique</li>
+        <li>Multi-objective optimization of die-sinking EDM process parameters with utility concept and Taguchi method</li>
+        <li>Preheat temperature effects on thermal behavior in AlSi10Mg powder bed during laser powder bed fusion process</li>
+        <li>Development of turbopumps for low-thrust cryogenic rocket engine</li>
+        <li>Exergy transfer in a vertical channel with partially filled metal foams</li>
+        <li>Numerical investigation of the icing of water drop striking on solid surface from hydrophilic to superhydrophobic surfaces</li>
+        <li>Viscous dissipation, Soret and uniform heat source effects on MHD flow of a polar fluid through porous mediums</li>
+        <li>Smart factories: development of interconnected, intelligent factories</li>
+        <li>Cybersecurity measures for safeguarding interconnected manufacturing systems</li>
+        <li>Additive manufacturing and 3D printing: novel materials, processes, and applications</li>
+        <li>Advanced composite materials: lightweight, durable, and high-strength composites</li>
+        <li>Biomechanics and bioengineering: understanding human movement, tissue engineering, and biomedical devices</li>
+        <li>Renewable energy systems: innovations in wind, solar, and hydrokinetic energy</li>
+        <li>Smart materials and structures: materials that adapt their properties in response to environmental stimuli</li>
+        <li>Robotics and automation: enhancing automation in manufacturing</li>
+        <li>Energy harvesting and conversion: extracting and converting energy efficiently</li>
+        <li>Micro- and nano-mechanics: mechanical behavior at the micro and nanoscale</li>
+        <li>Cyber-physical systems: integrating computational algorithms and physical processes</li>
+        <li>Industry 4.0 and Internet of Things (IoT): predictive maintenance, quality control, and process optimization</li>
+        <li>Thermal management systems: efficient cooling and heating technologies for electronic devices</li>
+        <li>Sustainable manufacturing and design: reducing environmental impact and improving efficiency</li>
+        <li>Artificial intelligence in mechanical systems: design optimization, predictive maintenance, and decision-making</li>
+        <li>Adaptive control systems: systems that autonomously adapt to changing conditions</li>
+        <li>Friction stir welding and processing: advancements in solid-state joining processes</li>
+        <li>Hybrid and electric vehicles: improving efficiency and battery technology</li>
+        <li>Aeroelasticity and flight dynamics: interaction between aerodynamics and structural dynamics</li>
+        <li>MEMS/NEMS (Micro/Nano-Electro-Mechanical Systems): tiny mechanical devices and sensors</li>
+        <li>Soft robotics and bio-inspired machines: flexible and adaptive structures</li>
+        <li>Wearable technology and smart fabrics: mechanical systems in wearable devices</li>
+        <li>Human-machine interface: designing intuitive interfaces for better interaction</li>
+        <li>Precision engineering and metrology: accurate measurement and manufacturing techniques</li>
+        <li>Multifunctional materials: materials serving multiple purposes</li>
+        <li>Ergonomics and human factors in design: considering human comfort, safety, and usability</li>
+        <li>Cybersecurity in mechanical systems: protecting systems from cyber threats</li>
+        <li>Supply chain optimization in manufacturing: streamlining logistics</li>
+        <li>Drones and unmanned aerial vehicles (UAVs): design, propulsion, autonomy, and applications</li>
+        <li>Resilient and sustainable infrastructure: developing infrastructure to withstand environmental changes</li>
+        <li>Space exploration technologies: advancements in propulsion and materials for space missions</li>
+        <li>Hydrogen economy and fuel cells: hydrogen-based energy systems and fuel cell technology</li>
+        <li>Tribology and surface engineering: study of friction, wear, and lubrication</li>
+        <li>Digital twin technology: virtual models for analysis and optimization</li>
+        <li>Electric propulsion systems for satellites: efficiency and performance improvements</li>
+        <li>Humanitarian engineering: addressing societal challenges in resource-constrained areas</li>
+        <li>Optimization and design of exoskeletons: wearable robotic devices for assisting movement</li>
+        <li>Nanotechnology in mechanical engineering: nanomaterials and devices</li>
+        <li>Microfluidics and lab-on-a-chip devices: small-scale fluid-handling devices</li>
+        <li>Clean water technologies: production, treatment, and distribution</li>
+        <li>Circular economy and sustainable design: designing for a circular economic model</li>
+        <li>Biologically inspired design: efficient and sustainable systems inspired by nature</li>
+        <li>Energy-efficient HVAC systems: heating, ventilation, and air conditioning innovations</li>
+        <li>Advanced heat exchangers: efficient heat transfer systems</li>
+        <li>Acoustic metamaterials and noise control: materials and systems for sound control</li>
+        <li>Smart grid technology: integrating advanced technologies into power grids</li>
+        <li>Renewable energy integration in mechanical systems: optimizing renewable energy sources</li>
+        <li>Smart cities and infrastructure: sustainable urban systems</li>
+        <li>Biomimetic engineering: mimicking biological systems for innovative solutions</li>
+        <li>Machine learning for materials discovery: discovering new materials with desired properties</li>
+        <li>Health monitoring systems for structures: real-time structural health monitoring</li>
+        <li>Virtual reality (VR) and augmented reality (AR) in mechanical engineering: applications in design and training</li>
+        <li>Advanced liquid cooling systems for high-performance electronics</li>
+        <li>AI-driven predictive maintenance systems for manufacturing</li>
+        <li>Autonomous robots for hazardous environment exploration</li>
+        <li>Bio-inspired adhesive materials for medical applications</li>
+        <li>Carbon nanotube-reinforced composite materials</li>
+        <li>Computational fluid dynamics (CFD) for optimizing fluid flow</li>
+        <li>Design of exoskeletons for industrial applications</li>
+        <li>Dynamic vibration control systems using smart materials</li>
+        <li>Electric propulsion systems for spacecraft</li>
+        <li>Energy-efficient HVAC systems with advanced control algorithms</li>
+        <li>Flexible electronics for wearable technology</li>
+        <li>Graphene-based supercapacitors for energy storage</li>
+        <li>High-performance thermoelectric materials for cooling applications</li>
+        <li>Hybrid additive manufacturing processes for complex parts</li>
+        <li>Innovative cooling solutions for electric vehicle batteries</li>
+        <li>Intelligent automation systems for assembly lines</li>
+        <li>Laser-assisted fabrication of microdevices</li>
+        <li>Lightweight metal matrix composites for aerospace applications</li>
+        <li>Machine learning algorithms for fault detection in machinery</li>
+        <li>Magnetic fluid seals for high-temperature applications</li>
+        <li>Mechanical metamaterials with tunable properties</li>
+        <li>Microfluidic devices for medical diagnostics</li>
+        <li>Nanostructured coatings for wear resistance</li>
+        <li>Numerical simulation techniques for optimizing heat exchangers</li>
+        <li>Optimization of fuel injection systems for internal combustion engines</li>
+        <li>Photovoltaic cells with enhanced efficiency</li>
+        <li>Plasma-assisted surface modification for improved adhesion</li>
+        <li>Predictive analytics for optimizing manufacturing processes</li>
+        <li>Quantum dots for high-efficiency lighting</li>
+        <li>Recycling technologies for advanced composite materials</li>
+        <li>Robotic systems for underwater exploration</li>
+        <li>Self-healing materials for structural applications</li>
+        <li>Smart fabrics with integrated sensors</li>
+        <li>Solar thermal systems for industrial heating</li>
+        <li>Sustainable materials for additive manufacturing</li>
+        <li>Tribological coatings for reducing friction and wear</li>
+        <li>Ultra-lightweight aerogels for thermal insulation</li>
+        <li>Unmanned aerial vehicles (UAVs) for precision agriculture</li>
+        <li>Variable geometry turbochargers for automotive engines</li>
+        <li>Wearable exoskeletons for rehabilitation</li>
+        <li>Zero-emission fuel technologies for heavy-duty vehicles</li>
+        <li>3D-printed bones for orthopedic surgery</li>
+        <li>Advanced materials for high-temperature superconductors</li>
+        <li>AI-enhanced design tools for mechanical engineering</li>
+        <li>Autonomous vehicles with enhanced safety features</li>
+        <li>Biodegradable polymers for sustainable packaging</li>
+        <li>Carbon capture technologies for reducing emissions</li>
+        <li>Condition monitoring systems for rotating machinery</li>
+        <li>Design of lightweight structures for aerospace</li>
+        <li>Development of hybrid rocket engines</li>
+        <li>Digital twins for real-time system monitoring</li>
+        <li>Dynamic analysis of smart grids</li>
+        <li>Electromagnetic interference (EMI) shielding materials</li>
+        <li>Energy harvesting devices for IoT applications</li>
+        <li>Flexible solar panels for portable power</li>
+        <li>Graphene oxide coatings for corrosion resistance</li>
+        <li>High-efficiency water desalination systems</li>
+        <li>Hydrodynamic bearings for reducing friction</li>
+        <li>Impact-resistant nanocomposites for protective gear</li>
+        <li>Intelligent control systems for HVAC</li>
+        <li>Laser-induced breakdown spectroscopy (LIBS) for material analysis</li>
+        <li>Lightweight thermal insulation materials for buildings</li>
+        <li>Magnetorheological dampers for vibration control</li>
+        <li>Mechanical properties of 3D-printed metal parts</li>
+        <li>Microelectromechanical systems (MEMS) for sensors</li>
+        <li>Nanofluidics for drug delivery systems</li>
+        <li>Optimization of hybrid energy systems</li>
+        <li>Performance analysis of solar-powered refrigeration</li>
+        <li>Photonic crystals for controlling light</li>
+        <li>Plasma spray coatings for thermal barriers</li>
+        <li>Reconfigurable manufacturing systems</li>
+        <li>Robotic manipulators for precision tasks</li>
+        <li>Self-assembling nanomaterials for sensors</li>
+        <li>Simulation of multiphase flow in pipelines</li>
+        <li>Smart actuators for adaptive structures</li>
+        <li>Solar desalination technologies</li>
+        <li>Sustainable approaches to metal recycling</li>
+        <li>Thermal management in electronic devices</li>
+        <li>Tribological performance of advanced lubricants</li>
+        <li>Ultra-thin coatings for high-temperature applications</li>
+        <li>Unmanned ground vehicles for search and rescue</li>
+        <li>Virtual reality systems for engineering training</li>
+        <li>Wearable sensors for health monitoring</li>
+        <li>Wind tunnel testing for automotive design</li>
+        <li>Zero-energy building technologies</li>
+        <li>3D bioprinting for tissue engineering</li>
+        <li>Advanced robotics for industrial automation</li>
+        <li>AI for optimizing supply chain logistics</li>
+        <li>Autonomous drones for infrastructure inspection</li>
+        <li>Bio-inspired materials for energy storage</li>
+        <li>Computational models for heat transfer</li>
+        <li>Design of smart grid systems</li>
+        <li>Development of biodegradable electronics</li>
+        <li>Digital manufacturing platforms for customization</li>
+        <li>Dynamic simulation of robotic systems</li>
+        <li>Electrochemical energy storage systems</li>
+        <li>Energy-efficient pneumatic systems</li>
+        <li>Graphene-Based Supercapacitors for Energy Storage</li>
+        <li>High-Performance Thermoelectric Materials for Cooling Applications</li>
+        <li>Hybrid Additive Manufacturing Processes for Complex Parts</li>
+        <li>Innovative Cooling Solutions for Electric Vehicle Batteries</li>
+        <li>Intelligent Automation Systems for Assembly Lines</li>
+        <li>Laser-Assisted Fabrication of Microdevices</li>
+        <li>Lightweight Metal Matrix Composites for Aerospace Applications</li>
+        <li>Machine Learning Algorithms for Fault Detection in Machinery</li>
+        <li>Magnetic Fluid Seals for High-Temperature Applications</li>
+        <li>Mechanical Metamaterials with Tunable Properties</li>
+        <li>Microfluidic Devices for Medical Diagnostics</li>
+        <li>Nanostructured Coatings for Wear Resistance</li>
+        <li>Optimization of Fuel Injection Systems for Internal Combustion Engines</li>
+        <li>Photovoltaic Cells with Enhanced Efficiency</li>
+        <li>Plasma-Assisted Surface Modification for Improved Adhesion</li>
+        <li>Predictive Analytics for Optimizing Manufacturing Processes</li>
+        <li>Quantum Dots for High-Efficiency Lighting</li>
+        <li>Recycling Technologies for Advanced Composite Materials</li>
+        <li>Robotic Systems for Underwater Exploration</li>
+        <li>Self-Healing Materials for Structural Applications</li>
+        <li>Smart Fabrics with Integrated Sensors</li>
+        <li>Solar Thermal Systems for Industrial Heating</li>
+        <li>Sustainable Materials for Additive Manufacturing</li>
+        <li>Tribological Coatings for Reducing Friction and Wear</li>
+        <li>Ultra-Lightweight Aerogels for Thermal Insulation</li>
+        <li>Unmanned Aerial Vehicles (UAVs) for Precision Agriculture</li>
+        <li>Variable Geometry Turbochargers for Automotive Engines</li>
+        <li>Wearable Exoskeletons for Rehabilitation</li>
+        <li>Zero-Emission Fuel Technologies for Heavy-Duty Vehicles</li>
+        <li>3D-Printed Bones for Orthopedic Surgery</li>
+        <li>Advanced Materials for High-Temperature Superconductors</li>
+        <li>AI-Enhanced Design Tools for Mechanical Engineering</li>
+        <li>Autonomous Vehicles with Enhanced Safety Features</li>
+        <li>Biodegradable Polymers for Sustainable Packaging</li>
+        <li>Carbon Capture Technologies for Reducing Emissions</li>
+        <li>Condition Monitoring Systems for Rotating Machinery</li>
+        <li>Design of Lightweight Structures for Aerospace</li>
+        <li>Development of Hybrid Rocket Engines</li>
+        <li>Dynamic Analysis of Smart Grids</li>
+        <li>Electromagnetic Interference (EMI) Shielding Materials</li>
+        <li>Energy Harvesting Devices for IoT Applications</li>
+        <li>Flexible Solar Panels for Portable Power</li>
+        <li>Graphene Oxide Coatings for Corrosion Resistance</li>
+        <li>High-Efficiency Water Desalination Systems</li>
+        <li>Hydrodynamic Bearings for Reducing Friction</li>
+        <li>Impact-Resistant Nanocomposites for Protective Gear</li>
+        <li>Intelligent Control Systems for HVAC</li>
+        <li>Laser-Induced Breakdown Spectroscopy (LIBS) for Material Analysis</li>
+        <li>Lightweight Thermal Insulation Materials for Buildings</li>
+        <li>Magnetorheological Dampers for Vibration Control</li>
+        <li>Mechanical Properties of 3D-Printed Metal Parts</li>
+        <li>Microelectromechanical Systems (MEMS) for Sensors</li>
+        <li>Nanofluidics for Drug Delivery Systems</li>
+        <li>Optimization of Hybrid Energy Systems</li>
+        <li>Performance Analysis of Solar-Powered Refrigeration</li>
+        <li>Photonic Crystals for Controlling Light</li>
+        <li>Plasma Spray Coatings for Thermal Barriers</li>
+        <li>Reconfigurable Manufacturing Systems</li>
+        <li>Robotic Manipulators for Precision Tasks</li>
+        <li>Self-Assembling Nanomaterials for Sensors</li>
+        <li>Simulation of Multiphase Flow in Pipelines</li>
+        <li>Smart Actuators for Adaptive Structures</li>
+        <li>Solar Desalination Technologies</li>
+        <li>Sustainable Approaches to Metal Recycling</li>
+        <li>Thermal Management in Electronic Devices</li>
+        <li>Tribological Performance of Advanced Lubricants</li>
+        <li>Ultra-Thin Coatings for High-Temperature Applications</li>
+        <li>Unmanned Ground Vehicles for Search and Rescue</li>
+        <li>Virtual Reality Systems for Engineering Training</li>
+        <li>Wearable Sensors for Health Monitoring</li>
+        <li>Wind Tunnel Testing for Automotive Design</li>
+        <li>Zero-Energy Building Technologies</li>
+        <li>3D Bioprinting for Tissue Engineering</li>
+        <li>Advanced Robotics for Industrial Automation</li>
+        <li>AI for Optimizing Supply Chain Logistics</li>
+        <li>Autonomous Drones for Infrastructure Inspection</li>
+        <li>Bio-Inspired Materials for Energy Storage</li>
+        <li>Computational Models for Heat Transfer</li>
+        <li>Design of Smart Grid Systems</li>
+        <li>Development of Biodegradable Electronics</li>
+        <li>Digital Manufacturing Platforms for Customization</li>
+        <li>Dynamic Simulation of Robotic Systems</li>
+        <li>Electrochemical Energy Storage Systems</li>
+        <li>Energy-Efficient Pneumatic Systems</li>
+        <li>Material Selection for Engineering Design</li>
+        <li>Thermal Analysis of Heat Sinks</li>
+        <li>Design of Hydraulic Systems</li>
+        <li>Principles of Combustion Engines</li>
+        <li>Stress Analysis of Pressure Vessels</li>
+        <li>Principles of Refrigeration and Air Conditioning</li>
+        <li>Acoustics and Noise Control Engineering</li>
+        <li>Advanced Topics in Fluid Mechanics</li>
+        <li>Design of Mechanical Springs</li>
+        <li>Mechanical Behavior of Composite Materials</li>
+        <li>Micromechanics of Materials</li>
+        <li>Robust Control Systems in Mechanical Engineering</li>
+        <li>Mechanical Design of Machine Elements</li>
+        <li>Analysis of Thermal Stresses</li>
+        <li>Mechanical Properties of Metals</li>
+        <li>Fluid-Structure Interaction in Mechanical Systems</li>
+        <li>Design and Analysis of Mechanical Seals</li>
+        <li>Thermal Management in Mechanical Systems</li>
+        <li>Dynamic Response of Mechanical Systems</li>
+        <li>Design of Pneumatic Systems</li>
+        <li>Mechanical Fatigue and Fracture Mechanics</li>
+        <li>Mechanics of Elasticity and Plasticity</li>
+        <li>Thermodynamics of Heat Engines</li>
+        <li>Finite Element Methods in Mechanical Engineering</li>
+        <li>Control of Mechanical Systems</li>
+        <li>Structural Dynamics in Mechanical Systems</li>
+        <li>Thermal Properties of Engineering Materials</li>
+        <li>Design of Mechanical Bearings</li>
+        <li>Mechanical Vibrations and Modal Analysis</li>
+        <li>Heat Transfer in Natural Convection</li>
+        <li>Design of Mechanical Fasteners</li>
+        <li>Fracture Mechanics in Engineering Design</li>
+        <li>Optimization of Mechanical Structures</li>
+        <li>Mechanical Systems in Renewable Energy</li>
+        <li>Design of HVAC Systems</li>
+        <li>Thermal and Fluid Systems Design</li>
+        <li>Fatigue Life Prediction of Mechanical Components</li>
+        <li>Advanced Manufacturing Processes</li>
+        <li>Nonlinear Dynamics in Mechanical Systems</li>
+        <li>Thermodynamic Analysis of Power Cycles</li>
+        <li>Mechanical Integrity of Welded Structures</li>
+        <li>Design of Rotating Equipment</li>
+        <li>Mechanical Properties of Polymers</li>
+        <li>Heat Transfer in Phase Change Materials</li>
+        <li>Mechanical Design of Automotive Components</li>
+        <li>Thermodynamic Properties of Fluids</li>
+        <li>Design of Marine Propulsion Systems</li>
+        <li>Advanced Computational Methods in Mechanical Engineering</li>
+        <li>Fluid Dynamics in Turbo Machinery</li>
+        <li>Design and Analysis of Mechanical Drives</li>
+        <li>Principles of Heat and Mass Transfer</li>
+        <li>Mechanics of Thin-Walled Structures</li>
+        <li>Mechanical Properties of Ceramics</li>
+        <li>Thermal Stresses in Engineering Structures</li>
+        <li>Mechanical Design of Pressure Vessels</li>
+        <li>Fluid Power Control Systems</li>
+        <li>Mechanical Behavior of Advanced Materials</li>
+        <li>Design of Thermal Systems</li>
+        <li>Dynamic Modeling of Mechanical Systems</li>
+        <li>Thermodynamics of Refrigeration Systems</li>
+        <li>Mechanical Properties of Composites</li>
+        <li>Heat Transfer in Multi-Phase Systems</li>
+        <li>Design of Mechanical Linkages</li>
+        <li>Mechanical Reliability Engineering</li>
+        <li>Thermodynamics of Combustion Processes</li>
+        <li>Mechanical Properties of Nanomaterials</li>
+        <li>Fluid Mechanics of Jet Propulsion</li>
+        <li>Design of Mechanical Joints</li>
+        <li>Mechanical Behavior of Alloys</li>
+        <li>Thermodynamic Analysis of Refrigeration Cycles</li>
+        <li>Fluid Mechanics in Hydraulic Machines</li>
+        <li>Design and Optimization of Mechanical Springs</li>
+        <li>Mechanical Properties of Structural Steel</li>
+        <li>Heat Exchanger Performance Analysis</li>
+        <li>Design of Mechanical Couplings</li>
+        <li>Thermodynamics of Gas Turbines</li>
+        <li>Mechanical Properties of Glass</li>
+        <li>Fluid Dynamics in Mechanical Systems</li>
+        <li>Design of Mechanical Clutches</li>
+        <li>Mechanical Properties of Carbon Fiber</li>
+        <li>Thermodynamic Analysis of Steam Cycles</li>
+        <li>Mechanical Systems in Aerospace Engineering</li>
+        <li>Fluid Mechanics of Aerodynamic Systems</li>
+        <li>Design and Analysis of Mechanical Dampers</li>
+        <li>Thermal Management Systems for Spacecraft</li>
+        <li>Design of Spacecraft Structures</li>
+        <li>Propulsion Systems for Space Exploration</li>
+        <li>Mechanics of Space Launch Vehicles</li>
+        <li>Space Debris Mitigation Technologies</li>
+        <li>Advanced Composites for Space Applications</li>
+        <li>Microgravity Effects on Material Properties</li>
+        <li>Radiation Shielding Materials for Spacecraft</li>
+        <li>Thermal Protection Systems for Reentry Vehicles</li>
+        <li>In-Space Manufacturing Technologies</li>
+        <li>Space Habitat Design and Engineering</li>
+        <li>Robotic Systems for Space Missions</li>
+        <li>Spacecraft Attitude Control Systems</li>
+        <li>High-Temperature Alloys for Rocket Engines</li>
+        <li>Spacecraft Vibration Isolation Systems</li>
+        <li>Microthrusters for Satellite Propulsion</li>
+        <li>Energy Storage Systems for Space Missions</li>
+        <li>Design of Lunar Rovers</li>
+        <li>Fluid Dynamics in Microgravity</li>
+        <li>Space-Based Solar Power Systems</li>
+        <li>Heat Transfer in Space Environments</li>
+        <li>Radiative Cooling for Spacecraft</li>
+        <li>Thermal Analysis of Satellite Components</li>
+        <li>Design of Space Station Modules</li>
+        <li>Advanced Insulation Materials for Spacecraft</li>
+        <li>Mechanisms for Deployable Space Structures</li>
+        <li>Electromagnetic Interference Shielding in Space</li>
+        <li>Satellite Structural Integrity Analysis</li>
+        <li>Microgravity Combustion Experiments</li>
+        <li>Spacecraft Docking Mechanisms</li>
+        <li>Design of Mars Exploration Vehicles</li>
+        <li>Spacecraft Power Management Systems</li>
+        <li>Mechanical Properties of Spaceborne Materials</li>
+        <li>Satellite Thermal Control Systems</li>
+        <li>Design of Space-Based Telescopes</li>
+        <li>Space Robotics for Planetary Exploration</li>
+        <li>Life Support Systems for Space Missions</li>
+        <li>Spacecraft Structural Health Monitoring</li>
+        <li>Mechanics of Space Tethers</li>
+        <li>Acoustic Control in Spacecraft Cabins</li>
+        <li>Space Elevator Design Concepts</li>
+        <li>Advanced Propellants for Space Missions</li>
+        <li>Design of Satellite Antenna Systems</li>
+        <li>Spacecraft Environmental Control Systems</li>
+        <li>Space-Based Manufacturing of Composite Materials</li>
+        <li>Hypervelocity Impact on Space Structures</li>
+        <li>Spacecraft Landing Gear Design</li>
+        <li>Design of Space Exploration Suits</li>
+        <li>Advanced Sensors for Space Missions</li>
+        <li>Radiation Effects on Electronic Components</li>
+        <li>Spacecraft Heat Exchangers</li>
+        <li>Mechanics of Inflatable Space Habitats</li>
+        <li>Design of Interplanetary Probes</li>
+        <li>Satellite Communication Systems</li>
+        <li>Thermal Management of Space Instruments</li>
+        <li>Design of Spaceport Infrastructure</li>
+        <li>Spacecraft Fuel Management Systems</li>
+        <li>Structural Analysis of Space Rovers</li>
+        <li>Mechanical Systems for Space Mining</li>
+        <li>Thermal Control of Lunar Bases</li>
+        <li>Design of Spaceborne Optical Systems</li>
+        <li>Microgravity Fluid Mechanics</li>
+        <li>Spacecraft Antenna Deployment Mechanisms</li>
+        <li>Advanced Alloys for Space Applications</li>
+        <li>Spacecraft Battery Technologies</li>
+        <li>Design of Space-Based Radar Systems</li>
+        <li>Thermal Insulation for Space Missions</li>
+        <li>Mechanical Systems for Asteroid Mining</li>
+        <li>Design of Space-Based Laboratories</li>
+        <li>Spacecraft Propellant Tanks</li>
+        <li>Thermal Analysis of Space Habitats</li>
+        <li>Spacecraft Thermal Radiators</li>
+        <li>Design of Solar Sails for Space Missions</li>
+        <li>Mechanical Properties of Lunar Regolith</li>
+        <li>Spacecraft Structural Components</li>
+        <li>Thermal Control of Space Experiments</li>
+        <li>Design of Space Power Systems</li>
+        <li>Mechanical Systems for Space Colonies</li>
+        <li>Advanced Composites for Satellite Structures</li>
+        <li>Spacecraft Thermal Conductivity Studies</li>
+        <li>Design of Space Exploration Tools</li>
+        <li>Thermal Management of Space Electronics</li>
+        <li>Spacecraft Launch and Recovery Systems</li>
+        <li>Advanced Thermal Protection Materials</li>
+        <li>Spacecraft Environmental Monitoring Systems</li>
+        <li>Thermal Analysis of Mars Rovers</li>
+        <li>Design of Space-Based Observatories</li>
+        <li>Spacecraft Power Generation Systems</li>
+        <li>Mechanical Systems for Space Debris Collection</li>
+        <li>Thermal Management in Zero Gravity</li>
+        <li>Design of Spacecraft Payload Systems</li>
+        <li>Space-Based Manufacturing Technologies</li>
+        <li>Thermal Control of Space Telescopes</li>
+        <li>Design of Extravehicular Mobility Units (EMUs)</li>
+        <li>Spacecraft Heat Shield Technologies</li>
+        </ul>
+    </div>
+        
+    <a href="contact.html" target="_blank" class="whatsapp-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+    </a>
+    <div class="contact-caption">Contact Us</div>
+
+    <div class="refresh-container">
+        <button id="refresh-button"><i class="fas fa-sync-alt"></i></button>
+        <div class="refresh-caption">Refresh Topics</div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+            const topicsList = document.getElementById('topics-list');
+            const topics = Array.from(topicsList.getElementsByTagName('li'));
+
+            function shuffle(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+
+            function refreshTopics() {
+                const shuffledTopics = shuffle(topics);
+                topicsList.innerHTML = '';
+                shuffledTopics.forEach((topic, index) => {
+                    const originalText = topic.textContent.replace(/^\d+\.\s*/, '');
+                    topic.innerHTML = `${index + 1}. ${originalText}`;
+                    topicsList.appendChild(topic);
+                });
+            }
+
+            refreshTopics();
+            document.getElementById('refresh-button').addEventListener('click', refreshTopics);
+        });
+
+        function searchFunction() {
+            const input = document.getElementById('search-input');
+            const filter = input.value.toLowerCase();
+            const ul = document.getElementById('topics-list');
+            const li = ul.getElementsByTagName('li');
+
+            for (let i = 0; i < li.length; i++) {
+                const txtValue = li[i].textContent || li[i].innerText;
+                if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                    li[i].style.display = '';
+                } else {
+                    li[i].style.display = 'none';
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const messageWrapper = document.querySelector('.message-wrapper');
+            const messages = Array.from(messageWrapper.getElementsByClassName('message'));
+
+            messages.forEach((message) => {
+                const clone = message.cloneNode(true);
+                messageWrapper.appendChild(clone);
+            });
+
+            function startScroll() {
+                messageWrapper.style.animation = 'scrollMessages 30s linear infinite';
+            }
+
+            startScroll();
+        });
+
+    </script>
+    
+</body>
+</html>

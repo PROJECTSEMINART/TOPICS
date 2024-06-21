@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Contact Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; /* Hide the scrollbar */
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            height: 100%; /* Ensure the container takes up full height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-form {
+            background-color: #1e1e1e;
+            padding: 40px 20px 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-in-out;
+            max-height: 90vh; /* Adjust the height to make the form scrollable */
+            overflow-y: auto; /* Add vertical scroll within the form if needed */
+            width: 100%; /* Ensure the form takes full width of the container */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-top: 0;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #444;
+            border-radius: 4px;
+            background-color: #2e2e2e;
+            color: white;
+        }
+
+        .contact-form input:focus,
+        .contact-form select:focus,
+        .contact-form textarea:focus {
+            border-color: #6200ea;
+            outline: none;
+            box-shadow: 0 0 5px rgba(98, 0, 234, 0.5);
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #25d366;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #1da851;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="whatsapp-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="branch">Branch:</label>
+                <select id="branch" name="branch" required>
+                    <option value="">Select your branch</option>
+                    <option value="Mechanical">Mechanical Engineering</option>
+                    <option value="Electrical">Electrical & Electronics Engineering</option>
+                    <option value="Civil">Civil Engineering</option>
+                    <option value="Computer">Computer Science & Engineering</option>
+                    <option value="Architecture">Architecture</option>
+                    <option value="Artificial Intelligence">Artificial Intelligence</option>
+                    <option value="Artificial Intelligence & Machine Learning">Artificial Intelligence & Machine Learning</option>
+                    <option value="Automation and Robotics">Automation and Robotics</option>
+                    <option value="Automobile Engineering">Automobile Engineering</option>
+                    <option value="Biomedical Engineering">Biomedical Engineering</option>
+                    <option value="Chemical Engineering">Chemical Engineering</option>
+                    <option value="Civil & Environmental Engineering">Civil & Environmental Engineering</option>
+                    <option value="Civil & Rural Engineering">Civil & Rural Engineering</option>
+                    <option value="Civil Engineering & Planning">Civil Engineering & Planning</option>
+                    <option value="Cloud Computing and Big Data">Cloud Computing and Big Data</option>
+                    <option value="Commercial Practice">Commercial Practice</option>
+                    <option value="Communication & Computer Networking">Communication & Computer Networking</option>
+                    <option value="Computer Application & Business Management">Computer Application & Business Management</option>
+                    <option value="Computer Engineering">Computer Engineering</option>
+                    <option value="Computer Hardware Engineering">Computer Hardware Engineering</option>
+                    <option value="Cyber Forensics and Information Security">Cyber Forensics and Information Security</option>
+                    <option value="Electrical Engineering & Electric Vehicles Technology">Electrical Engineering & Electric Vehicles Technology</option>
+                    <option value="Electronics and Communication">Electronics and Communication</option>
+                    <option value="Electronics Engineering">Electronics Engineering</option>
+                    <option value="Environmental Engineering">Environmental Engineering</option>
+                    <option value="Food Processing Technology">Food Processing Technology</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Instrumentation Engineering">Instrumentation Engineering</option>
+                    <option value="Integrated Circuit Design & Fabrication">Integrated Circuit Design & Fabrication</option>
+                    <option value="Manufacturing Technology">Manufacturing Technology</option>
+                    <option value="Mechatronics">Mechatronics</option>
+                    <option value="Polymer Technology">Polymer Technology</option>
+                    <option value="Printing Technology">Printing Technology</option>
+                    <option value="Renewable Energy">Renewable Energy</option>
+                    <option value="Robotic Process Automation">Robotic Process Automation</option>
+                    <option value="Textile Technology">Textile Technology</option>
+                    <option value="Tool & Die Engineering">Tool & Die Engineering</option>
+                    <option value="Wood and Paper Technology">Wood and Paper Technology</option>
+                </select>
+
+                <label for="college">College:</label>
+                <input type="text" id="college" name="college" required>
+
+                <label for="semester">Semester:</label>
+                <select id="semester" name="semester" required>
+                    <option value="">Select your semester</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+
+                <label for="report-type">Report Type:</label>
+                <select id="report-type" name="report-type" required>
+                    <option value="">Select report type</option>
+                    <option value="Seminar Report">Seminar Report</option>
+                    <option value="Seminar PPT">Seminar PPT</option>
+                    <option value="Project Report">Project Report</option>
+                    <option value="Project PPT">Project PPT</option>
+                    <option value="Internship Report">Internship Report</option>
+                    <option value="Community Skill Report">Community Skill Report</option>
+                </select>
+
+                <label for="referral">Referral Code:</label>
+                <input type="text" id="referral" name="referral">
+
+                <label for="requirements">Requirements:</label>
+                <textarea id="requirements" name="requirements" rows="4"></textarea>
+
+                <label for="topic">Topic Name:</label>
+                <textarea id="topic" name="topic" rows="4" required></textarea>
+
+                <button type="submit"><i class="fab fa-whatsapp"></i> Submit and Contact</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const branch = document.getElementById('branch').value;
+            const college = document.getElementById('college').value;
+            const semester = document.getElementById('semester').value;
+            const reportType = document.getElementById('report-type').value;
+            const referral = document.getElementById('referral').value;
+            const requirements = document.getElementById('requirements').value;
+            const topic = document.getElementById('topic').value;
+
+            const message = `Name: ${name}%0ABranch: ${branch}%0ACollege: ${college}%0ASemester: ${semester}%0AReport Type: ${reportType}%0AReferral Code: ${referral}%0ARequirements: ${requirements}%0ATopic Name: ${topic}`;
+
+            const whatsappURL = `https://wa.me/9745745513?text=${message}`;
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+</body>
+</html>

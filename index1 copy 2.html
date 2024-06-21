@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanical Engineering Seminar Topics</title>
+    <style>
+       body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    user-select: none; /* Disable text selection */
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.watermark-small {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><text x="50%" y="50%" fill="rgba(255, 255, 255, 0.1)" font-size="10" font-family="Arial" dy=".3em" text-anchor="middle" transform="rotate(-45)">9745745513</text></svg>') repeat;
+    pointer-events: none; /* Make the watermark unclickable */
+    z-index: 1; /* Ensure watermark is on top */
+}
+
+.watermark-large {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg); /* Rotate the watermark */
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.274);
+    pointer-events: none; /* Make the watermark unclickable */
+    white-space: nowrap; /* Ensure the watermark text stays on one line */
+    z-index: 2; /* Ensure the large watermark is above the small ones */
+}
+
+.content {
+    position: relative;
+    z-index: 3; /* Ensure content is behind watermark */
+    padding: 50px 20px;
+    min-height: 100vh; /* Ensure minimum height for scrolling */
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+li {
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.whatsapp-logo {
+    position: fixed;
+    bottom: 100px; /* Adjusted to make room for the robot */
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    animation: bounce 2s infinite;
+}
+
+.whatsapp-logo img {
+    width: 35px;
+    height: 35px;
+}
+
+.contact-caption {
+    position: fixed;
+    bottom: 70px; /* Placed below the WhatsApp logo */
+    right: 20px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    z-index: 4;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 20px;
+    position: relative;
+}
+
+#search-input {
+    width: 200px;
+    padding: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Transparent border */
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    color: white;
+}
+
+#search-input::placeholder {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.search-container button {
+    padding: 8px 12px;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.5); /* Transparent background */
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: -5px; /* Adjust to align with the input */
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-container button i {
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.search-container button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(0, 123, 255, 0.7); /* Slightly less transparent on hover */
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: transform 0.5s;
+    z-index: 0;
+}
+
+.search-container button:hover::before {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.search-container button:hover {
+    background-color: rgba(255, 0, 0, 0.7); /* Slightly less transparent on hover */
+    transform: scale(1.05);
+}
+
+.refresh-container {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+    transform: translateY(-50%);
+}
+
+#refresh-button {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#refresh-button i {
+    font-size: 20px;
+}
+
+#refresh-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.refresh-caption {
+    margin-top: 5px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.robot-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none; /* Ensure the robot container does not interfere with clicks */
+}
+
+.robot {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.robot-messages {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    position: relative;
+    width: 300px; /* Set a fixed width for the message container */
+    height: 30px; /* Adjust the height to fit your needs */
+    overflow: hidden;
+}
+
+.message-wrapper {
+    display: flex;
+    flex-direction: column;
+    animation: scrollMessages 30s linear infinite; /* Adjust the duration for speed control */
+}
+
+.message {
+    margin: 0;
+    white-space: nowrap;
+    height: 30px; /* Ensure messages have the same height */
+    display: flex;
+    align-items: center;
+}
+
+@keyframes scrollMessages {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-30px);
+    }
+    40% {
+        transform: translateY(-60px);
+    }
+    60% {
+        transform: translateY(-90px);
+    }
+    80% {
+        transform: translateY(-120px);
+    }
+    100% {
+        transform: translateY(-150px);
+    }
+}
+    </style>
+
+</head>
+<div class="robot-messages">
+    <div class="message-wrapper">
+        <p class="message">Offer 1: free editing</p>
+        <p class="message">Offer 2: full content!</p>
+        <p class="message">Offer 3: Free Shipping!</p>
+        <p class="message">Offer 4: 20% off</p>
+        <p class="message">Offer 5: free document for project</p>
+    </div>
+</div>
+</div>
+
+<body>
+    <div class="watermark-small"></div>
+    <div class="watermark-large">9745745513</div>
+    <div class="content">
+        <h1>Mechanical Engineering Seminar Topics whtsapp msg for reports</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search topics here..." onkeyup="searchFunction()">
+            <button type="button"><i class="fas fa-search"></i></button>
+        </div>
+        <ul id="topics-list">
+            
+        </ul>
+    </div>
+        
+    <a href="contact.html" target="_blank" class="whatsapp-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+    </a>
+    <div class="contact-caption">Contact Us</div>
+
+    <div class="refresh-container">
+        <button id="refresh-button"><i class="fas fa-sync-alt"></i></button>
+        <div class="refresh-caption">Refresh Topics</div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const topicsList = document.getElementById('topics-list');
+            const topics = Array.from(topicsList.getElementsByTagName('li'));
+    
+            // Function to shuffle the array
+            function shuffle(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+    
+            // Function to refresh the topics list
+            function refreshTopics() {
+                // Shuffle the topics
+                const shuffledTopics = shuffle(topics);
+    
+                // Clear the existing list
+                topicsList.innerHTML = '';
+    
+                // Append the shuffled topics to the list
+                shuffledTopics.forEach((topic, index) => {
+                    const originalText = topic.textContent.replace(/^\d+\.\s*/, ''); // Remove existing numbering
+                    topic.innerHTML = `${index + 1}. ${originalText}`;
+                    topicsList.appendChild(topic);
+                });
+            }
+    
+            // Initially shuffle topics on page load
+            refreshTopics();
+    
+            // Add event listener to refresh button
+            document.getElementById('refresh-button').addEventListener('click', refreshTopics);
+        });
+    
+        function searchFunction() {
+            const input = document.getElementById('search-input');
+            const filter = input.value.toLowerCase();
+            const ul = document.getElementById('topics-list');
+            const li = ul.getElementsByTagName('li');
+    
+            for (let i = 0; i < li.length; i++) {
+                const txtValue = li[i].textContent || li[i].innerText;
+                if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                    li[i].style.display = '';
+                } else {
+                    li[i].style.display = 'none';
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+    const messageWrapper = document.querySelector('.message-wrapper');
+    const messages = Array.from(messageWrapper.getElementsByClassName('message'));
+    
+    // Clone the messages to create an infinite scroll effect
+    messages.forEach((message) => {
+        const clone = message.cloneNode(true);
+        messageWrapper.appendChild(clone);
+    });
+});
+
+    </script>
+    
+</body>
+</html>
