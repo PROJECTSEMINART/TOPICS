@@ -20,18 +20,17 @@ document.addEventListener('DOMContentLoaded', () => {
     animatedBoxes.forEach(box => {
         observer.observe(box);
     });
-
     particlesJS('particles-js', {
         "particles": {
             "number": {
-                "value": 150,
+                "value": 150, // Number of particles
                 "density": {
                     "enable": true,
                     "value_area": 800
                 }
             },
             "color": {
-                "value": "#FFFFFF"
+                "value": "#FFFFFF" // Particle color
             },
             "shape": {
                 "type": "circle",
@@ -41,10 +40,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 "polygon": {
                     "nb_sides": 5
+                },
+                "image": {
+                    "src": "img/github.svg",
+                    "width": 100,
+                    "height": 100
                 }
             },
             "opacity": {
-                "value": 0.7,
+                "value": 0.7, // Opacity of particles
                 "random": false,
                 "anim": {
                     "enable": false,
@@ -54,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             },
             "size": {
-                "value": 4,
+                "value": 6, // Increase particle size
                 "random": true,
                 "anim": {
                     "enable": false,
@@ -67,12 +71,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 "enable": true,
                 "distance": 150,
                 "color": "#FFFFFF",
-                "opacity": 0.6,
+                "opacity": 0.6, // Opacity of lines
                 "width": 1
             },
             "move": {
                 "enable": true,
-                "speed": 6,
+                "speed": 3, // Slow down the speed
                 "direction": "none",
                 "random": false,
                 "straight": false,
@@ -125,6 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         },
         "retina_detect": true
+  
     });
 
     document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
